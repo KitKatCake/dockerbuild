@@ -12,11 +12,6 @@ pipeline {
         sh 'docker build -t dockeformine/hello-java:latest .'
       }
     }
-    stage('Login') {
-      steps {
-        sh 'echo  | docker login -u  --password-stdin'
-      }
-    }
     stage('Push') {
       steps {
         sh 'docker push dockeformine/hello-java:latest'
