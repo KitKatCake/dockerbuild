@@ -11,7 +11,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'docker build -t dockeformine/hello-java:latest .'
+        sh 'docker build -t dockeformine/hello-java:latests .'
       }
     }
      stage('Login') {
@@ -21,7 +21,7 @@ pipeline {
     }
     stage('Push') {
       steps {
-        sh 'docker push dockeformine/hello-java:latest'
+        sh 'docker push dockeformine/hello-java:latests'
       }
     }
   }
